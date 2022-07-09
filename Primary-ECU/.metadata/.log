@@ -1,0 +1,18 @@
+!SESSION 2022-07-09 16:26:17.739 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-07-09 16:26:29.994
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-07-09 16:26:30.050
+!MESSAGE Log4j initialized with config file /home/frao/Documents/3MAP/Primary-ECU/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-07-09 16:26:31.919
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-07-09 16:26:53.097
+!MESSAGE Indexed '3MAP-ECU-Firmware' (42 sources, 139 headers) in 4.96 sec: 17,267 declarations; 119,857 references; 3 unresolved inclusions; 156 syntax errors; 172 unresolved names (0.13%)

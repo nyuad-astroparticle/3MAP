@@ -64,8 +64,8 @@ all: main-build
 main-build: 3MAP-ECU-Firmware.elf secondary-outputs
 
 # Tool invocations
-3MAP-ECU-Firmware.elf 3MAP-ECU-Firmware.map: $(OBJS) $(USER_OBJS) /home/frao/STM32CubeIDE/workspace_1.9.0/CHMAP-Controller_V2/STM32H7A3ZITXQ_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "3MAP-ECU-Firmware.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/frao/STM32CubeIDE/workspace_1.9.0/CHMAP-Controller_V2/STM32H7A3ZITXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="3MAP-ECU-Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+3MAP-ECU-Firmware.elf 3MAP-ECU-Firmware.map: $(OBJS) $(USER_OBJS) /home/frao/Documents/3MAP/3MAP-ECU-Firmware/STM32H7A3ZITXQ_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "3MAP-ECU-Firmware.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/frao/Documents/3MAP/3MAP-ECU-Firmware/STM32H7A3ZITXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="3MAP-ECU-Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

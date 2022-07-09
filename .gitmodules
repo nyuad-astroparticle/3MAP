@@ -1,0 +1,3 @@
+[submodule "3MAP-Manual"]
+	path = 3MAP-Manual
+	url = git@github.com:nyuad-astroparticle/3MAP-Manual.git
